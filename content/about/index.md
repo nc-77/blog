@@ -63,6 +63,8 @@ meta : false
 
 - 本博客使用[Hugo](https://github.com/gohugoio/hugo)搭建；采用了[Meme](https://github.com/reuixiy/hugo-theme-meme)主题；目前托管于阿里云OSS上
 
+- [github地址](https://github.com/nc-77/blog)
+
   
 
 ### :mailbox: ​Contact Me 

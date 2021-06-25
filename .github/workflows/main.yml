@@ -1,0 +1,44 @@
+name: MainWorkflow
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+        
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+          extended: true
+
+      - name: Build Blog
+        run: hugo --minify
+
+      - name: Upload Algolia Index
+        uses: wangchucheng/algolia-uploader@master
+        with:
+          # Such as `Z0U0ACGBN8`
+          app_id: QAZQ4L0054
+          # You can store token in your project's 'Setting > Secrets' and reference the name here. Such as ${{ secrets.ALGOLIA_ADMIN_KEY }}
+          admin_key: ${{ secrets.ALGOLIA_ADMIN_KEY }}
+          # The index name. 
+          index_name: blog
+          # The index file path relative to repo root.
+          index_file_path: ./public/algolia.json
+          
+      - name: Deply To OSS
+        env:
+            OSS_AccessKeyID: ${{ secrets.ACCESS_KEY_ID }}
+            OSS_AccessKeySecret: ${{ secrets.ACCESS_KEY_SECRET }}
+            OSS_EndPoint: oss-cn-hangzhou.aliyuncs.com
+            OSS_Bucket: nc-blog
+        run: |
+            wget -q http://gosspublic.alicdn.com/ossutil/1.6.10/ossutil64
+            chmod +x ./ossutil64
+            ./ossutil64 config -e $OSS_EndPoint -i $OSS_AccessKeyID -k $OSS_AccessKeySecret -L CH
+            ./ossutil64 rm -r -f oss://$OSS_Bucket/
+            ./ossutil64 cp -r -f ./public oss://$OSS_Bucket/

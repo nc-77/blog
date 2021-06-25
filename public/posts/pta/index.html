@@ -18,7 +18,7 @@
 
     
     
-        <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.min.js" defer></script><script src="/js/meme.min.57bc196cb003568db22e3dd96b328822740f71c4b2477eaef215f5313babc23b.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2/dist/instantsearch.min.js" defer></script><script src="/js/meme.min.a534d5a207865ca9efb12f2ec5e8161cd9662fabcfd72b5cd28d92042a387c89.js"></script>
 
     
 
@@ -1864,21 +1864,6 @@
 
 
         
-    
-
-        
-
-        
-
-        
-            <div id="vcomments"></div>
-        
-
-        
-
-        
-    
-
 
 
     </div>
@@ -1953,65 +1938,6 @@
 
 
 
-
-    
-
-        
-
-        
-            <script>
-    function loadComments() {
-        if (typeof Valine === 'undefined') {
-            var getScript = (options) => {
-                var script = document.createElement('script');
-                script.defer = true;
-                script.crossOrigin = 'anonymous';
-                Object.keys(options).forEach((key) => {
-                    script[key] = options[key];
-                });
-                document.body.appendChild(script);
-            };
-            getScript({
-                src: 'https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js',
-                onload: () => {
-                    newValine();
-                }
-            });
-        } else {
-            newValine();
-        }
-    }
-    function newValine() {
-        new Valine({
-            el: '#vcomments',
-            appId: 'U4yAAgvMYoKRD3TN4boNsGhh-gzGzoHsz',
-            appKey: 'FiVDP2QusCCkIBNp11GBXb4M',
-            placeholder: '在昵称栏填写QQ号即可自动获取头像和昵称:)',
-            path: location.pathname,
-            avatar: 'mm',
-            meta: ["nick","mail","link"],
-            pageSize:  10 ,
-            lang: 'zh-cn',
-            visitor:  false ,
-            highlight:  true ,
-            avatarForce:  false ,
-            recordIP:  false ,
-            serverURLs: '',
-            emojiCDN: '',
-            emojiMaps: {},
-            enableQQ:  true ,
-            requiredFields: []
-        });
-    }
-</script>
-
-        
-
-        
-
-        
-
-    
 
 
 

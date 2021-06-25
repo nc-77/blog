@@ -1,13 +1,27 @@
 [[blogroll]]
-  name = "荷戟独彷徨"
-  url = "https://guanqr.com"
-  avatar = "https://guanqr.com/icons/android-chrome-512x512.png"
-  description = "爱光学，爱生活，爱创造"
+  name = "Songhn"
+  url = "https://blog.songhn.com/"
+  avatar = "https://img.nc-77.top/songhn.bmp"
+  description = "啥都会的巨佬%%%"
   weight = 1
 
 [[blogroll]]
-  name = "荷戟独彷徨"
-  url = "https://guanqr.com"
-  avatar = "https://guanqr.com/icons/android-chrome-512x512.png"
-  description = "爱光学，爱生活，爱创造"
+  name = "Gujh"
+  url = "https://gutaiduanzhuang.github.io/"
+  avatar = "https://img.nc-77.top/gjh.png"
+  description = ""
   weight = 2
+
+[[blogroll]]
+  name = "Fuyq"
+  url = "http://fuyiqing.net/"
+  avatar = "https://img.nc-77.top/fyq.jpg"
+  description = "一个学计算机的小姐姐"
+  weight = 3
+
+[[blogroll]]
+  name = "Wanglf"
+  url = "http://www.legr4ndk.top/"
+  avatar = "https://img.nc-77.top/QQ图片20210308153706.jpg"
+  description = "全栈带佬"
+  weight = 3

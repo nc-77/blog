@@ -1,11 +1,23 @@
-// 文件位置：~/assets/scss/custom/_custom.scss
+// 友链样式
+.blogroll-link::after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.blogroll-link {
+    display: grid;
+    grid-gap: 0 1.5em;
+    grid-template-columns: 1fr 1fr;
+}
 
 .blogroll {
     padding: 1em 0;
-    border: 2px solid transparent;
     border-bottom: 1px dashed var(--color-contrast-low);
     display: flex;
     transition: all .5s;
+    text-decoration: none !important;
+    overflow: hidden;
     .friend {
         text-decoration: none;
         text-overflow: ellipsis;
@@ -14,7 +26,7 @@
     }
     .name {
         font-weight: bold;
-        margin: 0.375em 0;  
+        margin: 0.375em 0;
     }
     .excerpt {
         font-size: 0.875em;
@@ -27,5 +39,11 @@
         height: 4em !important;
         margin: 0 1em 0 0 !important;
         z-index: 0;
+    }
+}
+
+@media (max-width: $maxWidth) {
+    .blogroll-link {
+        grid-template-columns: 1fr;
     }
 }

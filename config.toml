@@ -1123,8 +1123,8 @@ uglyURLs = false
 
     displayShareOnText = false
 
-    shareOnTwitter = true
-    shareOnFacebook = true
+    shareOnTwitter = false
+    shareOnFacebook = false
     shareOnLinkedIn = true
     shareOnTelegram = true
     shareOnWeibo = false

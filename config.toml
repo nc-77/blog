@@ -625,7 +625,7 @@ uglyURLs = false
     valineVisitor = false
     valineHighlight = true
     valineAvatarForce = false
-    valineRecordIP = false
+    valineRecordIP = true
     valineServerURLs = ""
     valineEmojiCDN = ""
     valineEmojiMaps = {}
@@ -1364,8 +1364,8 @@ uglyURLs = false
 
     enableAlgoliaSearch = true
 
-    algoliaAppId = "QAZQ4L0054"
-    algoliaApiKey = "a974ded802ad57041ada6b0457c97e18"
+    algoliaAppId = "GB0HNUKCJK"
+    algoliaApiKey = "23ca805932aee32875e432d478d7c3ab"
     algoliaIndexName = "blog"
     # 说明：https://www.algolia.com/
 

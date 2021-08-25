@@ -6,7 +6,7 @@ meta : false
 ---
 ### :sleepy: Who am I 
 
-- HDU计算机科学与技术大二学生
+- HDU计算机科学与技术大三学生
 
 - 常用id：NiC，nc-77，n_c
 

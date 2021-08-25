@@ -24,7 +24,7 @@ jobs:
         uses: wangchucheng/algolia-uploader@master
         with:
           # Such as `Z0U0ACGBN8`
-          app_id: QAZQ4L0054
+          app_id: GB0HNUKCJK
           # You can store token in your project's 'Setting > Secrets' and reference the name here. Such as ${{ secrets.ALGOLIA_ADMIN_KEY }}
           admin_key: ${{ secrets.ALGOLIA_ADMIN_KEY }}
           # The index name. 

@@ -24,8 +24,6 @@ meta : false
 
 - 想多有些私人时间来读书
 
-- [A simple database written in Go](https://github.com/roseduan/rosedb)
-
 - 克服熬夜习惯努力ing
 
 - 为了不考研努力ing
@@ -53,9 +51,11 @@ meta : false
 
 - [x] 《MySQL必知必会》（数据库入门经典）
 
-- [ ] 《黑客与画家》（ing）
+- [x] 《黑客与画家》
 
-- [ ] 《MySQL技术内幕：InnoDB存储引擎》（ing）
+- [x] 《MySQL技术内幕：InnoDB存储引擎》
+
+- [ ] 《Redis 深度历险》
 
   
 

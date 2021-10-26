@@ -71,5 +71,5 @@ meta : false
 
 - Github：[nc-77](https://github.com/nc-77)
 
-- Email：nc@hdu.edu.cn
+- Email：291993554@qq.com
 

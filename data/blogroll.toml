@@ -25,3 +25,10 @@
   avatar = "https://img.nc-77.top/QQ图片20210308153706.jpg"
   description = "全栈带佬"
   weight = 3
+
+[[blogroll]]
+  name = "ek1ng"
+  url = "https://ek1ng.com/"
+  avatar = "https://img.nc-77.top/20220102223148.png"
+  description = "20级未来可期的小学弟"
+  weight = 3
